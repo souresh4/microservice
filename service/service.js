@@ -3,8 +3,9 @@ const request = require('request');
 const apiKey = "DemoOnly00mSh41R5fgrvlGTX70qKzXsktQnVIqhzxeHMoFKtvQiJAkjlu7msdRW";
 
 const zipCodeURL = "https://zipcodeapi.com/rest/";
-
+console.log("souresh testing");
 var distance = {
+    
     find: (req, res, next) => {
         request(zipCodeURL + apiKey +
             '/distance.json/' + req.params.zipcode1 + '/' +
